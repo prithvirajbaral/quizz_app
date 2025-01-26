@@ -54,7 +54,7 @@ class StartScreen extends StatelessWidget {
               backgroundColor: const Color.fromARGB(248, 40, 0, 72),
             ),
             icon: const Icon(Icons.arrow_right_alt),
-            label: const Text("Start Quiz app"),
+            label: const Text("Start Quiz"),
           )
         ],
       ),
