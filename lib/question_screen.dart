@@ -12,9 +12,17 @@ class QuestionScreen extends StatefulWidget {
 }
 
 class _QuestionScreen extends State<QuestionScreen> {
+  var currentQueIndex = 0;
+
+  void answerQuestion() {
+    setState(() {
+      currentQueIndex++;
+    });
+  }
+
   @override
   Widget build(context) {
-    final currentQuestion = questions[0];
+    final currentQuestion = questions[currentQueIndex];
     return SizedBox(
       width: double.infinity, //to take as much space you can
       child: Container(
@@ -33,7 +41,7 @@ class _QuestionScreen extends State<QuestionScreen> {
               height: 30,
             ),
             ...currentQuestion.getShuffledList().map((answer) {
-              return AnswersButton(answerText: answer, onTap: () {});
+              return AnswersButton(answerText: answer, onTap: answerQuestion);
             })
           ],
         ),
