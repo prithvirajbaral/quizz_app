@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class ResultScreen extends StatelessWidget {
-  const ResultScreen({super.key});
+  const ResultScreen({super.key, required this.chosenAnswer});
+
+  final List<String> chosenAnswer;
 
   @override
   Widget build(context) {
@@ -12,11 +14,15 @@ class ResultScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-              const Text("You answered X out of Y questions correctly!"),
-              const SizedBox(height: 30,),
-              const Text("List of answers and questions..."),
-              const SizedBox(height: 30,),
-              TextButton(onPressed: (){}, child: const Text("Restart Quiz!"))
+            const Text("You answered X out of Y questions correctly!"),
+            const SizedBox(
+              height: 30,
+            ),
+            const Text("List of answers and questions..."),
+            const SizedBox(
+              height: 30,
+            ),
+            TextButton(onPressed: () {}, child: const Text("Restart Quiz!"))
           ],
         ),
       ),
