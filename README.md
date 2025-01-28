@@ -1,3 +1,4 @@
+# Quizz App
 A simple Flutter project to create a quiz app. This app provides an interactive experience to users, enabling them to take quizzes and track their results.
 
 ## Features
