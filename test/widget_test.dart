@@ -1,30 +1,26 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
-import 'package:flutter/material.dart';
+// import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:quizz_app/main.dart';
+import 'package:quizz_app/quizz.dart'; // Import your main widget.
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  testWidgets('Quizz app initial screen test', (WidgetTester tester) async {
+    // Build the Quizz app.
+    await tester.pumpWidget(const Quizz());
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    // Verify that the StartScreen is displayed initially.
+    // (Update the following according to the actual widget or text in your StartScreen)
+    expect(find.text('Start'), findsOneWidget); // Assuming "Start" is a button or text in StartScreen.
+  });
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
+  testWidgets('Quizz app switches to QuestionScreen', (WidgetTester tester) async {
+    // Build the Quizz app.
+    await tester.pumpWidget(const Quizz());
+
+    // Tap the "Start" button (or equivalent in your StartScreen).
+    await tester.tap(find.text('Start')); // Replace 'Start' with the actual button text or widget key.
     await tester.pump();
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    // Verify that the QuestionScreen is displayed.
+    expect(find.text('Question'), findsOneWidget); // Replace 'Question' with the actual text/widget in QuestionScreen.
   });
 }
