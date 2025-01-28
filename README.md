@@ -1,5 +1,3 @@
-![Screenshot_1738060539](https://github.com/user-attachments/assets/1903a2b7-6642-418b-b013-4cbf96210254)# Quizz App
-
 A simple Flutter project to create a quiz app. This app provides an interactive experience to users, enabling them to take quizzes and track their results.
 
 ## Features
@@ -45,8 +43,8 @@ Ensure you have the following installed:
 
 ## Screenshots
 
-<img src="https://github.com/user-attachments/assets/f0e1800d-d163-4464-8e47-d047d7c24c4b" width="400" height="300">
-<img src="https://github.com/user-attachments/assets/83293537-3472-40b9-8e48-9142056ddb01" width="400" height="300">
-<img src="https://github.com/user-attachments/assets/d8d7a699-956a-479b-a8c5-b38893c0fcfd" width="400" height="300">
+<img src="https://github.com/user-attachments/assets/f0e1800d-d163-4464-8e47-d047d7c24c4b" width="200" height="400">
+<img src="https://github.com/user-attachments/assets/83293537-3472-40b9-8e48-9142056ddb01" width="200" height="400">
+<img src="https://github.com/user-attachments/assets/d8d7a699-956a-479b-a8c5-b38893c0fcfd" width="200" height="400">
 
 
