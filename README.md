@@ -1,16 +1,52 @@
-# quizz_app
+![Screenshot_1738060539](https://github.com/user-attachments/assets/1903a2b7-6642-418b-b013-4cbf96210254)# Quizz App
 
-A new Flutter project.
+A simple Flutter project to create a quiz app. This app provides an interactive experience to users, enabling them to take quizzes and track their results.
+
+## Features
+
+- Interactive quiz interface
+- Multiple choice questions
+- User-friendly navigation
+- Score tracking
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To run the project locally, follow the steps below:
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Ensure you have the following installed:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter SDK
+- Dart SDK
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/prithvirajbaral/quizz_app.git
+2. **Navigate to the project directory:**
+    ```bash
+    cd quizz_app
+3. **Install dependencies:**
+    ```bash
+    flutter pub get
+4. **flutter run**
+    ```bash
+    flutter run
+
+## Directory Structure
+
+- `lib/` - Contains the main Flutter app code.
+- `assets/` - Stores image assets used in the app.
+- `test/` - Contains the unit and widget tests.
+
+##Screenshots
+
+## Screenshots
+
+<img src="https://github.com/user-attachments/assets/f0e1800d-d163-4464-8e47-d047d7c24c4b" width="400" height="300">
+<img src="https://github.com/user-attachments/assets/83293537-3472-40b9-8e48-9142056ddb01" width="400" height="300">
+<img src="https://github.com/user-attachments/assets/d8d7a699-956a-479b-a8c5-b38893c0fcfd" width="400" height="300">
+
+
